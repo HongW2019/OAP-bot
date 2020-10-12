@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-# Copyright (c) 2020, NVIDIA CORPORATION.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,8 +17,8 @@
 
 This tool takes list of release versions to generate `CHANGELOG.md`.
 The changelog will include all merged PRs w/o `[bot]` postfix,
-and issues that include the labels `bug`, `feature request`, `SQL`, `performance` and `shuffle`,
-minus any issues with the labels `wontfix`, `invalid` or `duplicate`.
+and issues that include the labels `oap-native-sql`, `OAP-CACHE`, and `Intel MLlib`,
+minus any issues with other labels.
 
 For each project there should be an issue subsection for,
 Features: all issues with label `feature request` + `SQL`
